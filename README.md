@@ -134,7 +134,16 @@ In this exercise you will:
 #### Reflection Questions
 
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
+<summary>-i following by input.txt, which sets infile</summary>
+<summary>-o following by output.txt, which sets outfile</summary>
+
 2. **What are typical use cases for parameters versus flags? How do the differ from one another?**
+<summary>Use cases for parameter:</summary>
+specifying file names (-i input.txt) and setting configuration values
+
+<summary>Use cases for flags:</summary>
+modifying behavior without needing extra input and triggering help or version displays
+
 
 ---
 
@@ -187,8 +196,7 @@ In this exercise you will:
 #### Reflection Question
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
-
----
+<summary>While interactive input is useful for basic demos or user-driven tasks,batch processing is generally more scalable, efficient, and automation-friendly,especially in real-world software,data processing or production environments.</summary>
 
 ### Task 4: Input Redirection from STDIN
 
@@ -218,7 +226,8 @@ In this exercise you will:
 #### Reflection Question
 
 * **What is the difference between redirecting to stdin and explicitly opening a file with `fopen`?**
-
+<summary>Redirecting to stdin is simpler and shell-driven, ideal for quick tests or stream processing.
+Using fopen() gives explicit control within your program, which is essential for more complex or user-defined file operations.</summary>
 ---
 
 ### Task 5: Caesar Cipher & Prototype Asymmetric XOR Cipher
@@ -408,6 +417,16 @@ In this exercise you will:
 #### Reflection Question
 
 * **Explain in your own words what the encryption and decryption processes are doing in both ciphers.**
+<summary>for Caesar Cipher
+Encryption:
+for each alphabetic character schift it forward by key positions and for non-alphabetic characters are left unchanged
+Decryption
+schift characters backward by the same number of positions</summary>
+
+<summary>For XOR Cipher each character is XOR'ed with a a key byte in both case</summary>
+
+
+
 
 ---
 
